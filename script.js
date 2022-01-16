@@ -44,7 +44,7 @@ function setTime() {
   const hourForClock = hours % 12;
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
-  let appm = hours >= 12 ? "AM" : "PM";
+  let appm = hours >= 12 ? "PM" : "AM";
   hourEl.style.transform = `translate(-50%, -100%) rotate(${scale(
     hourForClock,
     0,
